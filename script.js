@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update start screen to show the challenge
             const startScreenDesc = document.querySelector('#start-screen p:first-of-type');
             if (startScreenDesc) {
-                startScreenDesc.innerHTML = `<strong>Challenge Mode!</strong><br>Your friend wants you to nestword: <span class="text-green-400 font-bold text-xl">${predeterminedWord.toUpperCase()}</span><br>How many words can you find?`;
+                startScreenDesc.innerHTML = `<strong>Challenge Mode!</strong><br>Your friend wants you to wordnest: <span class="text-green-400 font-bold text-xl">${predeterminedWord.toUpperCase()}</span><br>How many words can you find?`;
             }
         }
     }
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const gameUrl = `${window.location.origin}${window.location.pathname}?w=${encodedWord}`;
         
         // Create the engaging tweet text
-        const tweetText = `I just played #Nestword! 🪺🔠\nI nestworded ${wordsFound} out of ${totalWords} possible words from "${sourceWord}"! 🧠\n\nCan you nestword better than me?\n${gameUrl}`;
+        const tweetText = `I just played #Wordnest! 🪺🔠\nI wordnested ${wordsFound} out of ${totalWords} possible words from "${sourceWord}"! 🧠\n\nCan you wordnest better than me?\n${gameUrl}`;
         
         // Create Twitter share URL
         const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
